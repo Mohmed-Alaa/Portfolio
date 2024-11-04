@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between h-full px-4 text-xl sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* LINKS */}
-      <div className="hidden w-1/3 gap-4 md:flex">
+      <div className="w-1/3 gap-4 links md:flex">
         {links.map((link) => (
           <NavLinks link={link} key={link.title} />
         ))}
@@ -27,28 +27,23 @@ const Navbar = () => {
           href="/"
           className="flex items-center justify-center p-1 text-sm font-semibold bg-black rounded-md"
         >
-          <span className="mr-1 text-white">Lama</span>
+          <span className="mr-1 text-white">Mohamed</span>
           <span className="flex items-center justify-center w-12 h-8 text-black bg-white rounded">
-            .dev
+            Alaa
           </span>
         </Link>
       </div>
       {/* SOCIAL */}
-      <div className="hidden w-1/3 gap-4 md:flex">
+      <div className="w-1/3 gap-4 social md:flex">
         <Link href="/">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="/">
-          <Image src="/dribbble.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
-        </Link>
+
         <Link href="/">
           <Image src="/facebook.png" alt="" width={24} height={24} />
         </Link>
         <Link href="/">
-          <Image src="/pinterest.png" alt="" width={24} height={24} />
+          <Image src="/twitter.svg" alt="" width={22} height={24} />
         </Link>
         <Link href="/">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
@@ -61,9 +56,21 @@ const Navbar = () => {
           className="relative z-50 flex flex-col justify-between w-10 h-8"
           onClick={() => setOpen((prev) => !prev)}
         >
-          <div className="w-10 h-1 origin-left bg-black rounded"></div>
-          <div className="w-10 h-1 bg-black rounded"></div>
-          <div className="w-10 h-1 origin-left bg-black rounded"></div>
+          <div
+            className={`w-10 h-1 origin-left ${
+              open === false ? "bg-black" : "bg-white"
+            } rounded`}
+          ></div>
+          <div
+            className={`w-10 h-1 origin-left ${
+              open === false ? "bg-black" : "bg-white"
+            } rounded`}
+          ></div>
+          <div
+            className={`w-10 h-1 origin-left ${
+              open === false ? "bg-black" : "bg-white"
+            } rounded`}
+          ></div>
         </button>
         {/* MENU LIST */}
         {open && (
