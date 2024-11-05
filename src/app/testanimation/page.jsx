@@ -13,12 +13,12 @@ const TestPage = () => {
       },
     },
     variant2: {
-      x: 100,
-      y: -300,
+      x: 500,
+      y: -400,
       opacity: 1,
       rotation: 90,
       transition: {
-        duration: 3,
+        duration: 2,
       },
     },
   };
