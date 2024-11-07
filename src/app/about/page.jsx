@@ -33,7 +33,7 @@ const AboutPage = () => {
             <h1 className="text-2xl font-bold">SUMMARY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Results-driven Front End Developer skilled in designing and
+              Results-driven Front End Developer skilled in designing ,
               implementing responsive and user-friendly web interfaces.
               Proficient in HTML, CSS, JavaScript (ES6), and TypeScript, with
               extensive experience using frameworks and libraries such as
